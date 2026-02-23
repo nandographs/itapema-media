@@ -206,6 +206,29 @@ export default function App() {
         </div>
       </section>
 
+      {/* ════════════ Mockup Showcase ════════════ */}
+      <section className="py-16 md:py-24 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-lime-400/10 blur-[180px] rounded-full" />
+        </div>
+        <div className="max-w-5xl mx-auto relative z-10">
+          <FadeIn>
+            <div className="rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-black/50">
+              <img
+                src="/images/MOCKUP-01 jpg.jpg"
+                alt="Painel de LED Itapema Media — Mockup"
+                className="hidden md:block w-full h-auto object-cover"
+              />
+              <img
+                src="/images/MOCKUP-01-mobile.jpg"
+                alt="Painel de LED Itapema Media — Mockup Mobile"
+                className="block md:hidden w-full h-auto object-cover"
+              />
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
       {/* ════════════ Location Proof ════════════ */}
       <section id="localizacao" className="py-24 px-6 bg-zinc-950">
         <div className="max-w-7xl mx-auto">
