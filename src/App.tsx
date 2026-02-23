@@ -265,7 +265,7 @@ export default function App() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Fluxo constante de veículos</h3>
-                  <p className="text-zinc-400 leading-relaxed">O semáforo no cruzamento cria o tempo de retenção perfeito para que motoristas e passageiros leiam e absorvam seu anúncio.</p>
+                  <p className="text-zinc-400 leading-relaxed">O cruzamento movimentado garante que motoristas e passageiros tenham tempo suficiente para ler e absorver seu anúncio.</p>
                 </div>
               </SlideIn>
 
@@ -548,7 +548,7 @@ export default function App() {
               Quero anunciar agora <ArrowRight className="w-6 h-6" />
             </a>
             <p className="mt-8 text-black/70 font-medium text-lg">
-              R$ 350/mês • Sem fidelidade abusiva • Resultado real
+              R$ 350/mês • Resultado real
             </p>
           </FadeIn>
         </div>
