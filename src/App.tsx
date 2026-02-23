@@ -60,7 +60,7 @@ const SlideIn = ({ children, delay = 0, direction = 'left', className = "" }: { 
 // ─── Animated Counter ───
 function AnimatedCounter({ target, suffix = "", prefix = "" }: { target: number, suffix?: string, prefix?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: "-20px" });
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -84,7 +84,7 @@ function AnimatedCounter({ target, suffix = "", prefix = "" }: { target: number,
     return () => clearInterval(timer);
   }, [isInView, target]);
 
-  return <span ref={ref}>{prefix}{count.toLocaleString('pt-BR')}{suffix}</span>;
+  return <span ref={ref} style={{ display: 'inline-block', minHeight: '1em' }}>{prefix}{count.toLocaleString('pt-BR')}{suffix}</span>;
 }
 
 // ─── Main App ───
